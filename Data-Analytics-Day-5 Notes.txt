@@ -1,0 +1,104 @@
+✅ Day 5: Data-Driven Thinking & Tools (Focused Set)
+====================================================
+
+📘 Lesson 1: Data Types in Python (int, float, str, bool, list, dict):
+=======================================================================
+🔍 Summary:
+Understanding data types helps store and manipulate values correctly in Python. Common types:
+
+int, float — Numbers
+
+str — Text
+
+bool — True/False
+
+list, dict — Collections
+
+🧠 Real-World Example:
+At Netflix, a recommendation engine might use:
+
+user = {
+  "name": "Aman",        # str
+  "age": 24,             # int
+  "watched": ["Narcos", "Friends"],  # list
+  "is_premium": True     # bool
+}
+
+📘 Lesson 2: Data Collection Methods in Analytics:
+====================================================
+🔍 Summary:
+Data can be collected from various sources like:
+
+Surveys, web scraping, IoT devices
+
+APIs, user forms, transaction logs
+
+🧠 Real-World Example:
+Zomato collects:
+
+Order data from app logs
+
+Reviews from user feedback
+
+Locations via GPS sensors
+
+
+📘 Lesson 3: Descriptive Statistics (Mean, Median, Mode, Std Dev):
+===================================================================
+🔍 Summary:
+Descriptive stats summarize large datasets into simple numbers:
+
+Mean: Average
+
+Median: Middle
+
+Mode: Most frequent
+
+Std Dev: Spread
+
+🧠 Real-World Example:
+At Swiggy, average delivery time:
+
+import numpy as np
+np.mean([20, 22, 19, 21])  # → 20.5 minutes
+
+
+📘 Lesson 4: Data Profiling & Quality Assessment:
+=================================================
+🔍 Summary:
+This involves reviewing a dataset’s structure, completeness, and quality to catch issues before analysis.
+
+🧠 Real-World Example:
+At BigBasket, profiling may reveal:
+
+25% of prices are null
+
+Duplicate products
+
+Misspelled brand names
+
+Tools used: Pandas Profiling, Power Query, Great Expectations
+
+
+📘 Lesson 5: Handling Missing Data (dropna, fillna in Pandas):
+===============================================================
+🔍 Summary:
+Missing data must be handled before modeling:
+
+dropna() – delete rows with NaN
+
+fillna() – fill gaps with mean, median, 0, etc.
+
+🧠 Real-World Example:
+In a retail dataset, missing prices are filled:
+
+df['price'].fillna(df['price'].mean(), inplace=True)
+
+🧾 Summary: Day 5 Lessons
+Lesson	Topic	Focus Area
+1	Python Data Types	Foundation for logic & storage
+2	Data Collection	Real-world data sources
+3	Descriptive Statistics	Key statistical indicators
+4	Data Profiling	Data quality check before analysis
+5	Handling Missing Data	Crucial cleaning step
+
